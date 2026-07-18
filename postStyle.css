@@ -1,0 +1,167 @@
+* {
+    font-family: "Kanit", sans-serif;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.logoutBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logoutBtn:hover {
+    background-color: rgb(224, 49, 49);
+    cursor: pointer;
+}
+
+
+#add-post-container {
+    border: 2px solid olivedrab;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#add-post-container article > h2 {
+    color: rgb(17, 17, 17);
+}
+
+#newPost-text {
+padding: 10px;
+margin-bottom: 10px;
+}
+
+#newPost-image {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.addPost-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: turquoise;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+
+.addPost-btn:hover{
+    background-color: rgb(57, 131, 123);
+}
+
+
+
+#post-container{
+    width: 90%;
+    background-color: rgb(244, 222 , 225);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post {
+    width: 60%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-user-image img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid skyblue;
+}
+.post-username{
+    margin: 0;
+}
+
+
+.posted-time{
+color: rgb(135, 135, 135);
+font-size: 12px;
+}
+
+.post-image{
+    display: flex;
+    justify-content: center;
+}
+
+.post-image img{
+    width: 50%;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-user-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment-text-container {
+    background-color: rgb(152, 211, 152);
+}
+
+.comment-text-container h4,p {
+   margin: 0;
+}
+.comment-text-container h4{
+   margin-bottom: 5px;
+}
+
+.postComment-holder{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.post-comment-input-field-holder{
+width: 60%;
+}
+
+.postComment-input-field{
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+    width: 80%;
+}
+.postComment-btn {
+    padding: 10px;
+    background-color: rgb(202, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+
+}
+

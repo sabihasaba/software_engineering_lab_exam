@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postbook</title>
+    <link rel="stylesheet" href="./postStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="onload = checkLOggedInUser(); showLoggedUsername(); ">
+    <div class="header">
+        <h1>Hello, <span id="logged-username">Username</span></h1>
+        <button class="logoutBtn" onclick="logOut()">Logout</button>
+    </div>
+
+    <section id="add-post-container">
+        <article>
+        <h2>Add New Post</h2>
+        <div>
+            <textarea name="" id="newPost-text" cols="50" rows="5" placeholder="Add post text">
+                
+            </textarea>
+        </div>
+        <div>
+            <input type="text" name="" id="newPost-image" placeholder="Add post image URL">
+        </div>
+
+        <div>
+            <button onclick="handleAddNewPost()" class="addPost-btn">
+                POST
+            </button>
+            
+        </div>
+        </article>
+    </section>
+      
+
+    <section id="post-container">
+
+        <!-- post -->
+        <div class="post">
+            <div class="post-header">
+                <div class="post-user-image">
+                    <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" alt="Post User Image">
+                </div>
+
+                <div class="post-username-time">
+                    <p class="post-username">Username</p>
+                    <div class="posted-time">
+                        <span>13</span>
+                        <span>hours ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut placeat tempore consequuntur qui repellendus recusandae eos? Eius nisi fugit necessitatibus veniam suscipit distinctio cupiditate consequuntur.</p>
+            </div>
+
+            <div class="post-image">
+                <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="post-image">
+            </div>
+
+            <!-- comments under a single post -->
+
+            <div class="comments-holder">
+                <div class="comment">
+                    <div class="comment-user-image">
+                        <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" alt="comment-user-image">
+                    </div>
+                    <div class="comment-text-container">
+                        <h4>Commenter Username</h4>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, expedita!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-user-image">
+                        <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" alt="comment-user-image">
+                    </div>
+                    <div class="comment-text-container">
+                        <h4>Commenter Username</h4>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, expedita!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="comment">
+                    <div class="comment-user-image">
+                        <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" alt="comment-user-image">
+                    </div>
+                    <div class="comment-text-container">
+                        <h4>Commenter Username</h4>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, expedita!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="postComment-holder">
+                    <div class="post-comment-input-field-holder">
+                        <input type="text" name="" id="postComment-input-for-postId1" class="postComment-input-field" placeholder="Post your Comment">
+
+                    </div>
+                    <div class="comment-btn-holder">
+                        <button id="comment-btn" class="postComment-btn">Comment</button>
+                    </div>
+                </div>
+
+
+
+        </div>
+
+        
+        <!-- post -->
+        <div class="post">
+
+
+
+
+        </div>
+
+
+    </section>
+    <script src="./Frontend/js/fetchData.js"></script>
+    <script src="./Frontend/js/calculateTimeDifference.js"></script>
+</body>
+</html>
